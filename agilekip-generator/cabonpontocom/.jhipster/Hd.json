@@ -1,0 +1,22 @@
+{
+  "fields": [
+    {
+      "fieldName": "hdName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "hdPrice",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [],
+  "entityType": "domain",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "name": "Hd",
+  "changelogDate": "20211109000003",
+  "skipFakeData": true
+}

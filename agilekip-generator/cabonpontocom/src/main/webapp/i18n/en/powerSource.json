@@ -1,0 +1,25 @@
+{
+  "cabonpontocomApp": {
+    "powerSource": {
+      "home": {
+        "title": "Power Sources",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Power Source",
+        "createOrEditLabel": "Create or edit a Power Source",
+        "notFound": "No Power Sources found"
+      },
+      "created": "A new Power Source is created with identifier {{ param }}",
+      "updated": "A Power Source is updated with identifier {{ param }}",
+      "deleted": "A Power Source is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Power Source {{ id }}?"
+      },
+      "detail": {
+        "title": "Power Source"
+      },
+      "id": "ID",
+      "powerSourceName": "Power Source Name",
+      "powerSourcePrice": "Power Source Price"
+    }
+  }
+}

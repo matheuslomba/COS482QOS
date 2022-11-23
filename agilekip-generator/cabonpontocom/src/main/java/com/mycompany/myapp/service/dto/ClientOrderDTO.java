@@ -33,6 +33,18 @@ public class ClientOrderDTO implements Serializable {
 
     private Boolean isCompatible;
 
+    private MotherBoardDTO motherBoard;
+
+    private CpuDTO cpu;
+
+    private GpuDTO gpu;
+
+    private RamDTO ram;
+
+    private HdDTO hd;
+
+    private PowerSourceDTO powerSource;
+
     public Long getId() {
         return id;
     }
@@ -129,6 +141,54 @@ public class ClientOrderDTO implements Serializable {
         this.isCompatible = isCompatible;
     }
 
+    public MotherBoardDTO getMotherBoard() {
+        return motherBoard;
+    }
+
+    public void setMotherBoard(MotherBoardDTO motherBoard) {
+        this.motherBoard = motherBoard;
+    }
+
+    public CpuDTO getCpu() {
+        return cpu;
+    }
+
+    public void setCpu(CpuDTO cpu) {
+        this.cpu = cpu;
+    }
+
+    public GpuDTO getGpu() {
+        return gpu;
+    }
+
+    public void setGpu(GpuDTO gpu) {
+        this.gpu = gpu;
+    }
+
+    public RamDTO getRam() {
+        return ram;
+    }
+
+    public void setRam(RamDTO ram) {
+        this.ram = ram;
+    }
+
+    public HdDTO getHd() {
+        return hd;
+    }
+
+    public void setHd(HdDTO hd) {
+        this.hd = hd;
+    }
+
+    public PowerSourceDTO getPowerSource() {
+        return powerSource;
+    }
+
+    public void setPowerSource(PowerSourceDTO powerSource) {
+        this.powerSource = powerSource;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -166,6 +226,12 @@ public class ClientOrderDTO implements Serializable {
             ", assemblyPC='" + getAssemblyPC() + "'" +
             ", deliveryAdd='" + getDeliveryAdd() + "'" +
             ", isCompatible='" + getIsCompatible() + "'" +
+            ", motherBoard=" + getMotherBoard() +
+            ", cpu=" + getCpu() +
+            ", gpu=" + getGpu() +
+            ", ram=" + getRam() +
+            ", hd=" + getHd() +
+            ", powerSource=" + getPowerSource() +
             "}";
     }
 }

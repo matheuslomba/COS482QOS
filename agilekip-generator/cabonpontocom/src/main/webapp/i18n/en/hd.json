@@ -1,0 +1,25 @@
+{
+  "cabonpontocomApp": {
+    "hd": {
+      "home": {
+        "title": "Hds",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Hd",
+        "createOrEditLabel": "Create or edit a Hd",
+        "notFound": "No Hds found"
+      },
+      "created": "A new Hd is created with identifier {{ param }}",
+      "updated": "A Hd is updated with identifier {{ param }}",
+      "deleted": "A Hd is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Hd {{ id }}?"
+      },
+      "detail": {
+        "title": "Hd"
+      },
+      "id": "ID",
+      "hdName": "Hd Name",
+      "hdPrice": "Hd Price"
+    }
+  }
+}

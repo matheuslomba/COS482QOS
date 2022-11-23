@@ -170,6 +170,138 @@
                   />
                 </div>
               </div>
+              <div class="card-body py-0">
+                <div class="form-group">
+                  <label
+                    class="form-control-label"
+                    v-text="$t('cabonpontocomApp.clientOrderProcess.motherBoard')"
+                    for="client-order-process-motherBoard"
+                    >Mother Board</label
+                  >
+                  <input
+                    v-if="clientOrderProcess.clientOrder.motherBoard"
+                    readonly
+                    type="text"
+                    class="form-control"
+                    name="motherBoard"
+                    id="client-order-motherBoard"
+                    data-cy="motherBoard"
+                    :value="clientOrderProcess.clientOrder.motherBoard.motherBoardName"
+                  />
+                  <input
+                    v-else
+                    readonly
+                    type="text"
+                    class="form-control"
+                    name="motherBoard"
+                    id="client-order-motherBoard"
+                    data-cy="motherBoard"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div class="card-body py-0">
+                <div class="form-group">
+                  <label class="form-control-label" v-text="$t('cabonpontocomApp.clientOrderProcess.cpu')" for="client-order-process-cpu"
+                    >Cpu</label
+                  >
+                  <input
+                    v-if="clientOrderProcess.clientOrder.cpu"
+                    readonly
+                    type="text"
+                    class="form-control"
+                    name="cpu"
+                    id="client-order-cpu"
+                    data-cy="cpu"
+                    :value="clientOrderProcess.clientOrder.cpu.cpuName"
+                  />
+                  <input v-else readonly type="text" class="form-control" name="cpu" id="client-order-cpu" data-cy="cpu" value="" />
+                </div>
+              </div>
+              <div class="card-body py-0">
+                <div class="form-group">
+                  <label class="form-control-label" v-text="$t('cabonpontocomApp.clientOrderProcess.gpu')" for="client-order-process-gpu"
+                    >Gpu</label
+                  >
+                  <input
+                    v-if="clientOrderProcess.clientOrder.gpu"
+                    readonly
+                    type="text"
+                    class="form-control"
+                    name="gpu"
+                    id="client-order-gpu"
+                    data-cy="gpu"
+                    :value="clientOrderProcess.clientOrder.gpu.gpuName"
+                  />
+                  <input v-else readonly type="text" class="form-control" name="gpu" id="client-order-gpu" data-cy="gpu" value="" />
+                </div>
+              </div>
+              <div class="card-body py-0">
+                <div class="form-group">
+                  <label class="form-control-label" v-text="$t('cabonpontocomApp.clientOrderProcess.ram')" for="client-order-process-ram"
+                    >Ram</label
+                  >
+                  <input
+                    v-if="clientOrderProcess.clientOrder.ram"
+                    readonly
+                    type="text"
+                    class="form-control"
+                    name="ram"
+                    id="client-order-ram"
+                    data-cy="ram"
+                    :value="clientOrderProcess.clientOrder.ram.ramName"
+                  />
+                  <input v-else readonly type="text" class="form-control" name="ram" id="client-order-ram" data-cy="ram" value="" />
+                </div>
+              </div>
+              <div class="card-body py-0">
+                <div class="form-group">
+                  <label class="form-control-label" v-text="$t('cabonpontocomApp.clientOrderProcess.hd')" for="client-order-process-hd"
+                    >Hd</label
+                  >
+                  <input
+                    v-if="clientOrderProcess.clientOrder.hd"
+                    readonly
+                    type="text"
+                    class="form-control"
+                    name="hd"
+                    id="client-order-hd"
+                    data-cy="hd"
+                    :value="clientOrderProcess.clientOrder.hd.hdName"
+                  />
+                  <input v-else readonly type="text" class="form-control" name="hd" id="client-order-hd" data-cy="hd" value="" />
+                </div>
+              </div>
+              <div class="card-body py-0">
+                <div class="form-group">
+                  <label
+                    class="form-control-label"
+                    v-text="$t('cabonpontocomApp.clientOrderProcess.powerSource')"
+                    for="client-order-process-powerSource"
+                    >Power Source</label
+                  >
+                  <input
+                    v-if="clientOrderProcess.clientOrder.powerSource"
+                    readonly
+                    type="text"
+                    class="form-control"
+                    name="powerSource"
+                    id="client-order-powerSource"
+                    data-cy="powerSource"
+                    :value="clientOrderProcess.clientOrder.powerSource.powerSourceName"
+                  />
+                  <input
+                    v-else
+                    readonly
+                    type="text"
+                    class="form-control"
+                    name="powerSource"
+                    id="client-order-powerSource"
+                    data-cy="powerSource"
+                    value=""
+                  />
+                </div>
+              </div>
             </div>
           </template>
         </akip-show-process-instance>

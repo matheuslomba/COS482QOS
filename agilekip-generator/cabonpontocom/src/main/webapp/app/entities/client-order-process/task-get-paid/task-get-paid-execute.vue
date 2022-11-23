@@ -115,7 +115,22 @@
                   invalid: $v.taskContext.clientOrderProcess.clientOrder.payment.$invalid,
                 }"
                 v-model="$v.taskContext.clientOrderProcess.clientOrder.payment.$model"
+                required
               />
+              <div
+                v-if="
+                  $v.taskContext.clientOrderProcess.clientOrder.payment.$anyDirty &&
+                  $v.taskContext.clientOrderProcess.clientOrder.payment.$invalid
+                "
+              >
+                <small
+                  class="form-text text-danger"
+                  v-if="!$v.taskContext.clientOrderProcess.clientOrder.payment.required"
+                  v-text="$t('entity.validation.required')"
+                >
+                  This field is required.
+                </small>
+              </div>
             </div>
           </template>
         </akip-show-task-instance>

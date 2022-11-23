@@ -1,0 +1,22 @@
+{
+  "fields": [
+    {
+      "fieldName": "motherBoardName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "motherBoardPrice",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [],
+  "entityType": "domain",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "name": "MotherBoard",
+  "changelogDate": "20211109000003",
+  "skipFakeData": true
+}

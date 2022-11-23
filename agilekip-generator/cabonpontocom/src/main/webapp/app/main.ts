@@ -33,6 +33,12 @@ import UserOAuth2Service from '@/entities/user/user.oauth2.service';
 
 import ClientOrderService from '@/entities/client-order/client-order.service';
 import ClientOrderProcessService from '@/entities/client-order-process/client-order-process.service';
+import CpuService from '@/entities/cpu/cpu.service';
+import GpuService from '@/entities/gpu/gpu.service';
+import HdService from '@/entities/hd/hd.service';
+import MotherBoardService from '@/entities/mother-board/mother-board.service';
+import PowerSourceService from '@/entities/power-source/power-source.service';
+import RamService from '@/entities/ram/ram.service';
 // jhipster-needle-add-entity-service-to-main-import - JHipster will import entities services here
 
 /* tslint:enable */
@@ -98,6 +104,12 @@ new Vue({
     translationService: () => translationService,
     clientOrderService: () => new ClientOrderService(),
     clientOrderProcessService: () => new ClientOrderProcessService(),
+    cpuService: () => new CpuService(),
+    gpuService: () => new GpuService(),
+    hdService: () => new HdService(),
+    motherBoardService: () => new MotherBoardService(),
+    powerSourceService: () => new PowerSourceService(),
+    ramService: () => new RamService(),
     // jhipster-needle-add-entity-service-to-main - JHipster will import entities services here
     accountService: () => accountService,
   },

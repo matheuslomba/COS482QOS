@@ -20,7 +20,13 @@
       "proceedToCheckout": "Proceed To Checkout",
       "assemblyPC": "Assembly PC",
       "deliveryAdd": "Delivery Add",
-      "isCompatible": "Is Compatible"
+      "isCompatible": "Is Compatible",
+      "motherBoard": "Mother Board",
+      "cpu": "Cpu",
+      "gpu": "Gpu",
+      "ram": "Ram",
+      "hd": "Hd",
+      "powerSource": "Power Source"
     }
   }
 }

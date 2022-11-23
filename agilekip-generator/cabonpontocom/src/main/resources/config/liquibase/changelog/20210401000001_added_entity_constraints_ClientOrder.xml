@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+    <!--
+        Added the constraints for entity ClientOrder.
+    -->
+    <changeSet id="20210401000001-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="mother_board_id"
+                                 baseTableName="client_order"
+                                 constraintName="fk_client_order__mother_board_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="mother_board"/>
+
+        <addForeignKeyConstraint baseColumnNames="cpu_id"
+                                 baseTableName="client_order"
+                                 constraintName="fk_client_order__cpu_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="cpu"/>
+
+        <addForeignKeyConstraint baseColumnNames="gpu_id"
+                                 baseTableName="client_order"
+                                 constraintName="fk_client_order__gpu_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="gpu"/>
+
+        <addForeignKeyConstraint baseColumnNames="ram_id"
+                                 baseTableName="client_order"
+                                 constraintName="fk_client_order__ram_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ram"/>
+
+        <addForeignKeyConstraint baseColumnNames="hd_id"
+                                 baseTableName="client_order"
+                                 constraintName="fk_client_order__hd_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="hd"/>
+
+        <addForeignKeyConstraint baseColumnNames="power_source_id"
+                                 baseTableName="client_order"
+                                 constraintName="fk_client_order__power_source_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="power_source"/>
+    </changeSet>
+</databaseChangeLog>

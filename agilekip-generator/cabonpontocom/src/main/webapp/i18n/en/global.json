@@ -19,6 +19,12 @@
         "taskOfferAssembly": "Task Offer Assembly",
         "taskProceedCheckout": "Task Proceed Checkout",
         "taskGetPaid": "Task Get Paid",
+        "cpu": "Cpu",
+        "gpu": "Gpu",
+        "hd": "Hd",
+        "motherBoard": "Mother Board",
+        "powerSource": "Power Source",
+        "ram": "Ram",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

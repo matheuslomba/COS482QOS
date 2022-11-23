@@ -1,3 +1,10 @@
+import { IMotherBoard } from '@/shared/model/mother-board.model';
+import { ICpu } from '@/shared/model/cpu.model';
+import { IGpu } from '@/shared/model/gpu.model';
+import { IRam } from '@/shared/model/ram.model';
+import { IHd } from '@/shared/model/hd.model';
+import { IPowerSource } from '@/shared/model/power-source.model';
+
 export interface IClientOrder {
   id?: number;
   orderID?: string | null;
@@ -11,6 +18,12 @@ export interface IClientOrder {
   assemblyPC?: boolean | null;
   deliveryAdd?: string | null;
   isCompatible?: boolean | null;
+  motherBoard?: IMotherBoard | null;
+  cpu?: ICpu | null;
+  gpu?: IGpu | null;
+  ram?: IRam | null;
+  hd?: IHd | null;
+  powerSource?: IPowerSource | null;
 }
 
 export class ClientOrder implements IClientOrder {
@@ -26,7 +39,13 @@ export class ClientOrder implements IClientOrder {
     public proceedToCheckout?: boolean | null,
     public assemblyPC?: boolean | null,
     public deliveryAdd?: string | null,
-    public isCompatible?: boolean | null
+    public isCompatible?: boolean | null,
+    public motherBoard?: IMotherBoard | null,
+    public cpu?: ICpu | null,
+    public gpu?: IGpu | null,
+    public ram?: IRam | null,
+    public hd?: IHd | null,
+    public powerSource?: IPowerSource | null
   ) {
     this.proceedToCheckout = this.proceedToCheckout ?? false;
     this.assemblyPC = this.assemblyPC ?? false;

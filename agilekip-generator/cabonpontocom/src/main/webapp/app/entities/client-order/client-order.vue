@@ -29,6 +29,12 @@
             <th scope="row"><span v-text="$t('cabonpontocomApp.clientOrder.assemblyPC')">Assembly PC</span></th>
             <th scope="row"><span v-text="$t('cabonpontocomApp.clientOrder.deliveryAdd')">Delivery Add</span></th>
             <th scope="row"><span v-text="$t('cabonpontocomApp.clientOrder.isCompatible')">Is Compatible</span></th>
+            <th scope="row"><span v-text="$t('cabonpontocomApp.clientOrder.motherBoard')">Mother Board</span></th>
+            <th scope="row"><span v-text="$t('cabonpontocomApp.clientOrder.cpu')">Cpu</span></th>
+            <th scope="row"><span v-text="$t('cabonpontocomApp.clientOrder.gpu')">Gpu</span></th>
+            <th scope="row"><span v-text="$t('cabonpontocomApp.clientOrder.ram')">Ram</span></th>
+            <th scope="row"><span v-text="$t('cabonpontocomApp.clientOrder.hd')">Hd</span></th>
+            <th scope="row"><span v-text="$t('cabonpontocomApp.clientOrder.powerSource')">Power Source</span></th>
             <th scope="row"></th>
           </tr>
         </thead>
@@ -48,6 +54,40 @@
             <td>{{ clientOrder.assemblyPC }}</td>
             <td>{{ clientOrder.deliveryAdd }}</td>
             <td>{{ clientOrder.isCompatible }}</td>
+            <td>
+              <div v-if="clientOrder.motherBoard">
+                <router-link :to="{ name: 'MotherBoardView', params: { motherBoardId: clientOrder.motherBoard.id } }">{{
+                  clientOrder.motherBoard.motherBoardName
+                }}</router-link>
+              </div>
+            </td>
+            <td>
+              <div v-if="clientOrder.cpu">
+                <router-link :to="{ name: 'CpuView', params: { cpuId: clientOrder.cpu.id } }">{{ clientOrder.cpu.cpuName }}</router-link>
+              </div>
+            </td>
+            <td>
+              <div v-if="clientOrder.gpu">
+                <router-link :to="{ name: 'GpuView', params: { gpuId: clientOrder.gpu.id } }">{{ clientOrder.gpu.gpuName }}</router-link>
+              </div>
+            </td>
+            <td>
+              <div v-if="clientOrder.ram">
+                <router-link :to="{ name: 'RamView', params: { ramId: clientOrder.ram.id } }">{{ clientOrder.ram.ramName }}</router-link>
+              </div>
+            </td>
+            <td>
+              <div v-if="clientOrder.hd">
+                <router-link :to="{ name: 'HdView', params: { hdId: clientOrder.hd.id } }">{{ clientOrder.hd.hdName }}</router-link>
+              </div>
+            </td>
+            <td>
+              <div v-if="clientOrder.powerSource">
+                <router-link :to="{ name: 'PowerSourceView', params: { powerSourceId: clientOrder.powerSource.id } }">{{
+                  clientOrder.powerSource.powerSourceName
+                }}</router-link>
+              </div>
+            </td>
             <td class="text-right">
               <div class="btn-group">
                 <router-link :to="{ name: 'ClientOrderView', params: { clientOrderId: clientOrder.id } }" custom v-slot="{ navigate }">

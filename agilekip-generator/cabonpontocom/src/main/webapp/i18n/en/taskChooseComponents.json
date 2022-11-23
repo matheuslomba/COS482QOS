@@ -21,7 +21,13 @@
       "orderID": "Order ID",
       "orderDate": "Order Date",
       "clientName": "Client Name",
-      "numComponents": "Num Components"
+      "numComponents": "Num Components",
+      "motherBoard": "Mother Board",
+      "cpu": "Cpu",
+      "gpu": "Gpu",
+      "ram": "Ram",
+      "hd": "Hd",
+      "powerSource": "Power Source"
     }
   }
 }

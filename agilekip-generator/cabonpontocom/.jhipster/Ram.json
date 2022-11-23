@@ -1,0 +1,22 @@
+{
+  "fields": [
+    {
+      "fieldName": "ramName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ramPrice",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [],
+  "entityType": "domain",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "name": "Ram",
+  "changelogDate": "20211109000003",
+  "skipFakeData": true
+}

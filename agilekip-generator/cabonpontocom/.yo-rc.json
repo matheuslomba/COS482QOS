@@ -53,6 +53,6 @@
     "clientPackageManager": "npm",
     "clientThemeVariant": "",
     "languages": ["en"],
-    "entities": ["ClientOrder"]
+    "entities": ["ClientOrder", "Cpu", "Gpu", "Hd", "MotherBoard", "PowerSource", "Ram"]
   }
 }

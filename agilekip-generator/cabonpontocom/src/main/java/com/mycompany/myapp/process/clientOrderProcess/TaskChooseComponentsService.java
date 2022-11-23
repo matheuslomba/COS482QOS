@@ -77,6 +77,12 @@ public class TaskChooseComponentsService {
         clientOrderDTO.setOrderDate(taskChooseComponentsContext.getClientOrderProcess().getClientOrder().getOrderDate());
         clientOrderDTO.setClientName(taskChooseComponentsContext.getClientOrderProcess().getClientOrder().getClientName());
         clientOrderDTO.setNumComponents(taskChooseComponentsContext.getClientOrderProcess().getClientOrder().getNumComponents());
+        clientOrderDTO.setPowerSource(taskChooseComponentsContext.getClientOrderProcess().getClientOrder().getPowerSource());
+        clientOrderDTO.setPowerSource(taskChooseComponentsContext.getClientOrderProcess().getClientOrder().getPowerSource());
+        clientOrderDTO.setPowerSource(taskChooseComponentsContext.getClientOrderProcess().getClientOrder().getPowerSource());
+        clientOrderDTO.setPowerSource(taskChooseComponentsContext.getClientOrderProcess().getClientOrder().getPowerSource());
+        clientOrderDTO.setPowerSource(taskChooseComponentsContext.getClientOrderProcess().getClientOrder().getPowerSource());
+        clientOrderDTO.setPowerSource(taskChooseComponentsContext.getClientOrderProcess().getClientOrder().getPowerSource());
         clientOrderService.save(clientOrderDTO);
     }
 

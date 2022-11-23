@@ -54,6 +54,24 @@ public class ClientOrder implements Serializable {
     @Column(name = "is_compatible")
     private Boolean isCompatible;
 
+    @ManyToOne
+    private MotherBoard motherBoard;
+
+    @ManyToOne
+    private Cpu cpu;
+
+    @ManyToOne
+    private Gpu gpu;
+
+    @ManyToOne
+    private Ram ram;
+
+    @ManyToOne
+    private Hd hd;
+
+    @ManyToOne
+    private PowerSource powerSource;
+
     // jhipster-needle-entity-add-field - JHipster will add fields here
     public Long getId() {
         return id;
@@ -209,6 +227,84 @@ public class ClientOrder implements Serializable {
 
     public void setIsCompatible(Boolean isCompatible) {
         this.isCompatible = isCompatible;
+    }
+
+    public MotherBoard getMotherBoard() {
+        return this.motherBoard;
+    }
+
+    public ClientOrder motherBoard(MotherBoard motherBoard) {
+        this.setMotherBoard(motherBoard);
+        return this;
+    }
+
+    public void setMotherBoard(MotherBoard motherBoard) {
+        this.motherBoard = motherBoard;
+    }
+
+    public Cpu getCpu() {
+        return this.cpu;
+    }
+
+    public ClientOrder cpu(Cpu cpu) {
+        this.setCpu(cpu);
+        return this;
+    }
+
+    public void setCpu(Cpu cpu) {
+        this.cpu = cpu;
+    }
+
+    public Gpu getGpu() {
+        return this.gpu;
+    }
+
+    public ClientOrder gpu(Gpu gpu) {
+        this.setGpu(gpu);
+        return this;
+    }
+
+    public void setGpu(Gpu gpu) {
+        this.gpu = gpu;
+    }
+
+    public Ram getRam() {
+        return this.ram;
+    }
+
+    public ClientOrder ram(Ram ram) {
+        this.setRam(ram);
+        return this;
+    }
+
+    public void setRam(Ram ram) {
+        this.ram = ram;
+    }
+
+    public Hd getHd() {
+        return this.hd;
+    }
+
+    public ClientOrder hd(Hd hd) {
+        this.setHd(hd);
+        return this;
+    }
+
+    public void setHd(Hd hd) {
+        this.hd = hd;
+    }
+
+    public PowerSource getPowerSource() {
+        return this.powerSource;
+    }
+
+    public ClientOrder powerSource(PowerSource powerSource) {
+        this.setPowerSource(powerSource);
+        return this;
+    }
+
+    public void setPowerSource(PowerSource powerSource) {
+        this.powerSource = powerSource;
     }
 
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here

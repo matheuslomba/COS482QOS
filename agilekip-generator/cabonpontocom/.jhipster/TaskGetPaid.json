@@ -27,7 +27,8 @@
     },
     {
       "fieldName": "payment",
-      "fieldType": "String"
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
     }
   ],
   "relationships": [],

@@ -1,0 +1,25 @@
+{
+  "cabonpontocomApp": {
+    "motherBoard": {
+      "home": {
+        "title": "Mother Boards",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Mother Board",
+        "createOrEditLabel": "Create or edit a Mother Board",
+        "notFound": "No Mother Boards found"
+      },
+      "created": "A new Mother Board is created with identifier {{ param }}",
+      "updated": "A Mother Board is updated with identifier {{ param }}",
+      "deleted": "A Mother Board is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Mother Board {{ id }}?"
+      },
+      "detail": {
+        "title": "Mother Board"
+      },
+      "id": "ID",
+      "motherBoardName": "Mother Board Name",
+      "motherBoardPrice": "Mother Board Price"
+    }
+  }
+}

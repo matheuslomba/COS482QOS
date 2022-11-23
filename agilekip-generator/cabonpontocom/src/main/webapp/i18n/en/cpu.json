@@ -1,0 +1,25 @@
+{
+  "cabonpontocomApp": {
+    "cpu": {
+      "home": {
+        "title": "Cpus",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Cpu",
+        "createOrEditLabel": "Create or edit a Cpu",
+        "notFound": "No Cpus found"
+      },
+      "created": "A new Cpu is created with identifier {{ param }}",
+      "updated": "A Cpu is updated with identifier {{ param }}",
+      "deleted": "A Cpu is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Cpu {{ id }}?"
+      },
+      "detail": {
+        "title": "Cpu"
+      },
+      "id": "ID",
+      "cpuName": "Cpu Name",
+      "cpuPrice": "Cpu Price"
+    }
+  }
+}

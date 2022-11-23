@@ -37,6 +37,30 @@
             <font-awesome-icon icon="asterisk" />
             <span v-text="$t('global.menu.entities.clientOrder')">Client Order</span>
           </b-dropdown-item>
+          <b-dropdown-item to="/cpu">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.cpu')">Cpu</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/gpu">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.gpu')">Gpu</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/hd">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.hd')">Hd</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/mother-board">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.motherBoard')">Mother Board</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/power-source">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.powerSource')">Power Source</span>
+          </b-dropdown-item>
+          <b-dropdown-item to="/ram">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.ram')">Ram</span>
+          </b-dropdown-item>
           <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
         </b-nav-item-dropdown>
         <b-nav-item-dropdown

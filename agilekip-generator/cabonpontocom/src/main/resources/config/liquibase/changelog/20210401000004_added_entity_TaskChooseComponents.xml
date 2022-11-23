@@ -26,6 +26,24 @@
             <column name="num_components" type="integer">
                 <constraints nullable="true" />
             </column>
+            <column name="mother_board_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="cpu_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="gpu_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="ram_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="hd_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="power_source_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
             <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
         </createTable>
     </changeSet>

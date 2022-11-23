@@ -56,6 +56,126 @@
                 v-model="taskContext.clientOrderProcess.clientOrder.numComponents"
               />
             </div>
+            <div class="form-group">
+              <label
+                class="form-control-label"
+                v-text="$t('cabonpontocomApp.taskChooseComponents.motherBoard')"
+                for="task-choose-components-motherBoard"
+                >Mother Board</label
+              >
+              <input
+                v-if="taskContext.clientOrderProcess.clientOrder.motherBoard"
+                readonly
+                type="text"
+                class="form-control"
+                name="motherBoard"
+                id="client-order-motherBoard"
+                data-cy="motherBoard"
+                :value="taskContext.clientOrderProcess.clientOrder.motherBoard.motherBoardName"
+              />
+              <input
+                v-else
+                readonly
+                type="text"
+                class="form-control"
+                name="motherBoard"
+                id="client-order-motherBoard"
+                data-cy="motherBoard"
+                value=""
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-control-label" v-text="$t('cabonpontocomApp.taskChooseComponents.cpu')" for="task-choose-components-cpu"
+                >Cpu</label
+              >
+              <input
+                v-if="taskContext.clientOrderProcess.clientOrder.cpu"
+                readonly
+                type="text"
+                class="form-control"
+                name="cpu"
+                id="client-order-cpu"
+                data-cy="cpu"
+                :value="taskContext.clientOrderProcess.clientOrder.cpu.cpuName"
+              />
+              <input v-else readonly type="text" class="form-control" name="cpu" id="client-order-cpu" data-cy="cpu" value="" />
+            </div>
+            <div class="form-group">
+              <label class="form-control-label" v-text="$t('cabonpontocomApp.taskChooseComponents.gpu')" for="task-choose-components-gpu"
+                >Gpu</label
+              >
+              <input
+                v-if="taskContext.clientOrderProcess.clientOrder.gpu"
+                readonly
+                type="text"
+                class="form-control"
+                name="gpu"
+                id="client-order-gpu"
+                data-cy="gpu"
+                :value="taskContext.clientOrderProcess.clientOrder.gpu.gpuName"
+              />
+              <input v-else readonly type="text" class="form-control" name="gpu" id="client-order-gpu" data-cy="gpu" value="" />
+            </div>
+            <div class="form-group">
+              <label class="form-control-label" v-text="$t('cabonpontocomApp.taskChooseComponents.ram')" for="task-choose-components-ram"
+                >Ram</label
+              >
+              <input
+                v-if="taskContext.clientOrderProcess.clientOrder.ram"
+                readonly
+                type="text"
+                class="form-control"
+                name="ram"
+                id="client-order-ram"
+                data-cy="ram"
+                :value="taskContext.clientOrderProcess.clientOrder.ram.ramName"
+              />
+              <input v-else readonly type="text" class="form-control" name="ram" id="client-order-ram" data-cy="ram" value="" />
+            </div>
+            <div class="form-group">
+              <label class="form-control-label" v-text="$t('cabonpontocomApp.taskChooseComponents.hd')" for="task-choose-components-hd"
+                >Hd</label
+              >
+              <input
+                v-if="taskContext.clientOrderProcess.clientOrder.hd"
+                readonly
+                type="text"
+                class="form-control"
+                name="hd"
+                id="client-order-hd"
+                data-cy="hd"
+                :value="taskContext.clientOrderProcess.clientOrder.hd.hdName"
+              />
+              <input v-else readonly type="text" class="form-control" name="hd" id="client-order-hd" data-cy="hd" value="" />
+            </div>
+            <div class="form-group">
+              <label
+                class="form-control-label"
+                v-text="$t('cabonpontocomApp.taskChooseComponents.powerSource')"
+                for="task-choose-components-powerSource"
+                >Power Source</label
+              >
+              <input
+                v-if="taskContext.clientOrderProcess.clientOrder.powerSource"
+                readonly
+                type="text"
+                class="form-control"
+                name="powerSource"
+                id="client-order-powerSource"
+                data-cy="powerSource"
+                :value="taskContext.clientOrderProcess.clientOrder.powerSource.powerSourceName"
+              />
+              <input
+                v-else
+                readonly
+                type="text"
+                class="form-control"
+                name="powerSource"
+                id="client-order-powerSource"
+                data-cy="powerSource"
+                value=""
+              />
+            </div>
           </template>
         </akip-show-task-instance>
         <br />

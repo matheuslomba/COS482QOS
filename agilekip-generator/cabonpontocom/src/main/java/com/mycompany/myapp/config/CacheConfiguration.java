@@ -50,6 +50,12 @@ public class CacheConfiguration {
             createCache(cm, com.mycompany.myapp.domain.User.class.getName() + ".authorities");
             createCache(cm, com.mycompany.myapp.domain.ClientOrder.class.getName());
             createCache(cm, com.mycompany.myapp.domain.ClientOrderProcess.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Cpu.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Gpu.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Hd.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.MotherBoard.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.PowerSource.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Ram.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

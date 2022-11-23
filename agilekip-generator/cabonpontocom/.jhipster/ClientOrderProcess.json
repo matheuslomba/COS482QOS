@@ -45,7 +45,44 @@
       "fieldType": "Boolean"
     }
   ],
-  "relationships": [],
+  "relationships": [
+    {
+      "relationshipName": "motherBoard",
+      "otherEntityName": "motherBoard",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "motherBoardName"
+    },
+    {
+      "relationshipName": "cpu",
+      "otherEntityName": "cpu",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "cpuName"
+    },
+    {
+      "relationshipName": "gpu",
+      "otherEntityName": "gpu",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "gpuName"
+    },
+    {
+      "relationshipName": "ram",
+      "otherEntityName": "ram",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "ramName"
+    },
+    {
+      "relationshipName": "hd",
+      "otherEntityName": "hd",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "hdName"
+    },
+    {
+      "relationshipName": "powerSource",
+      "otherEntityName": "powerSource",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "powerSourceName"
+    }
+  ],
   "entityType": "process-binding",
   "processBpmnId": "ClientOrderProcess",
   "domainEntityName": "ClientOrder",

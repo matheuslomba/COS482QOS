@@ -1,0 +1,22 @@
+{
+  "fields": [
+    {
+      "fieldName": "cpuName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cpuPrice",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [],
+  "entityType": "domain",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "name": "Cpu",
+  "changelogDate": "20211109000003",
+  "skipFakeData": true
+}

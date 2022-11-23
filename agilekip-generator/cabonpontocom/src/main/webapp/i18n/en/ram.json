@@ -1,0 +1,25 @@
+{
+  "cabonpontocomApp": {
+    "ram": {
+      "home": {
+        "title": "Rams",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Ram",
+        "createOrEditLabel": "Create or edit a Ram",
+        "notFound": "No Rams found"
+      },
+      "created": "A new Ram is created with identifier {{ param }}",
+      "updated": "A Ram is updated with identifier {{ param }}",
+      "deleted": "A Ram is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Ram {{ id }}?"
+      },
+      "detail": {
+        "title": "Ram"
+      },
+      "id": "ID",
+      "ramName": "Ram Name",
+      "ramPrice": "Ram Price"
+    }
+  }
+}
