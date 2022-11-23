@@ -15,6 +15,7 @@
         "clientOrder": "Client Order",
         "clientOrderProcess": "Client Order Process",
         "clientOrderStartForm": "Client Order Start Form",
+        "taskChooseComponents": "Task Choose Components",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

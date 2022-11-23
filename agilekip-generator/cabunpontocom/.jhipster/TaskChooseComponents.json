@@ -1,0 +1,37 @@
+{
+  "fields": [
+    {
+      "fieldName": "orderID",
+      "fieldType": "String",
+      "fieldReadOnly": true
+    },
+    {
+      "fieldName": "orderDate",
+      "fieldType": "LocalDate",
+      "fieldReadOnly": true
+    },
+    {
+      "fieldName": "clientName",
+      "fieldType": "String",
+      "fieldReadOnly": true
+    },
+    {
+      "fieldName": "orderComponents",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityType": "user-task-form",
+  "processBpmnId": "ClientOrderProcess",
+  "processEntityName": "ClientOrderProcess",
+  "taskBpmnId": "TaskChooseComponents",
+  "domainEntityName": "ClientOrder",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "skipFakeData": true,
+  "name": "TaskChooseComponents",
+  "changelogDate": "20210401000004"
+}

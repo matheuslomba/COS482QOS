@@ -1,0 +1,27 @@
+{
+  "cabunpontocomApp": {
+    "taskChooseComponents": {
+      "home": {
+        "title": "Task Choose Components",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Task Choose Components",
+        "createOrEditLabel": "Create or edit a Task Choose Components",
+        "notFound": "No Task Choose Components found"
+      },
+      "created": "A new Task Choose Components is created with identifier {{ param }}",
+      "updated": "A Task Choose Components is updated with identifier {{ param }}",
+      "deleted": "A Task Choose Components is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Task Choose Components {{ id }}?"
+      },
+      "detail": {
+        "title": "Task Choose Components"
+      },
+      "id": "ID",
+      "orderID": "Order ID",
+      "orderDate": "Order Date",
+      "clientName": "Client Name",
+      "orderComponents": "Order Components"
+    }
+  }
+}
