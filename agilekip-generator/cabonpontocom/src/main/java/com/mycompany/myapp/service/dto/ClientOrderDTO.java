@@ -17,6 +17,8 @@ public class ClientOrderDTO implements Serializable {
 
     private String clientName;
 
+    private String clientEmail;
+
     private Integer orderPrice;
 
     private Integer numComponents;
@@ -61,6 +63,14 @@ public class ClientOrderDTO implements Serializable {
 
     public void setClientName(String clientName) {
         this.clientName = clientName;
+    }
+
+    public String getClientEmail() {
+        return clientEmail;
+    }
+
+    public void setClientEmail(String clientEmail) {
+        this.clientEmail = clientEmail;
     }
 
     public Integer getOrderPrice() {
@@ -148,6 +158,7 @@ public class ClientOrderDTO implements Serializable {
             ", orderID='" + getOrderID() + "'" +
             ", orderDate='" + getOrderDate() + "'" +
             ", clientName='" + getClientName() + "'" +
+            ", clientEmail='" + getClientEmail() + "'" +
             ", orderPrice=" + getOrderPrice() +
             ", numComponents=" + getNumComponents() +
             ", payment='" + getPayment() + "'" +

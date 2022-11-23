@@ -90,6 +90,26 @@
                     v-model="$v.clientOrderProcess.clientOrder.clientName.$model"
                   />
                 </div>
+                <div class="form-group">
+                  <label
+                    class="form-control-label"
+                    v-text="$t('cabonpontocomApp.clientOrderStartForm.clientEmail')"
+                    for="client-order-start-form-clientEmail"
+                    >Client Email</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="clientEmail"
+                    id="client-order-start-form-clientEmail"
+                    data-cy="clientEmail"
+                    :class="{
+                      valid: !$v.clientOrderProcess.clientOrder.clientEmail.$invalid,
+                      invalid: $v.clientOrderProcess.clientOrder.clientEmail.$invalid,
+                    }"
+                    v-model="$v.clientOrderProcess.clientOrder.clientEmail.$model"
+                  />
+                </div>
               </div>
             </template>
           </akip-show-process-definition>

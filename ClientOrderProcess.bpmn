@@ -27,11 +27,6 @@
       <bpmn:incoming>Flow_11nl60t</bpmn:incoming>
       <bpmn:outgoing>Flow_0py8jkp</bpmn:outgoing>
     </bpmn:userTask>
-    <bpmn:userTask id="TaskCalculateTotal" name="Calculate Total">
-      <bpmn:incoming>Flow_0j4i0kv</bpmn:incoming>
-      <bpmn:incoming>Flow_14fdyxf</bpmn:incoming>
-      <bpmn:outgoing>Flow_18i472e</bpmn:outgoing>
-    </bpmn:userTask>
     <bpmn:sequenceFlow id="Flow_18i472e" sourceRef="TaskCalculateTotal" targetRef="TaskProceedCheckout" />
     <bpmn:userTask id="TaskGetPaid" name="Get Paid">
       <bpmn:incoming>Flow_0zbpjik</bpmn:incoming>
@@ -57,10 +52,10 @@
     </bpmn:sendTask>
     <bpmn:sequenceFlow id="Flow_0yyycnx" sourceRef="TaskCheckCompatibility" targetRef="Gateway_0j83w28" />
     <bpmn:sequenceFlow id="Flow_14fdyxf" sourceRef="Gateway_0j83w28" targetRef="TaskCalculateTotal">
-      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${pi.getClientOrder().getCheckCompatibility()}</bpmn:conditionExpression>
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${pi.getClientOrder().getIsCompatible()}</bpmn:conditionExpression>
     </bpmn:sequenceFlow>
     <bpmn:sequenceFlow id="Flow_1lh1mbq" sourceRef="Gateway_0j83w28" targetRef="TaskSendWarning">
-      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${!pi.getClientOrder().getCheckCompatibility()}</bpmn:conditionExpression>
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${!pi.getClientOrder().getIsCompatible()}</bpmn:conditionExpression>
     </bpmn:sequenceFlow>
     <bpmn:sequenceFlow id="Flow_1805sxj" sourceRef="TaskSendWarning" targetRef="TaskChooseComponents" />
     <bpmn:serviceTask id="TaskCheckCompatibility" name="Check Compatibility" camunda:delegateExpression="${checkCompatibilityDelegate}">
@@ -72,6 +67,11 @@
       <bpmn:outgoing>Flow_0zbpjik</bpmn:outgoing>
     </bpmn:userTask>
     <bpmn:sequenceFlow id="Flow_0cifjgj" sourceRef="TaskGetPaid" targetRef="TaskConfirmationEmail" />
+    <bpmn:serviceTask id="TaskCalculateTotal" name="Calculate Total" camunda:delegateExpression="${calculateTotalDelegate}">
+      <bpmn:incoming>Flow_0j4i0kv</bpmn:incoming>
+      <bpmn:incoming>Flow_14fdyxf</bpmn:incoming>
+      <bpmn:outgoing>Flow_18i472e</bpmn:outgoing>
+    </bpmn:serviceTask>
     <bpmn:textAnnotation id="TextAnnotation_04z4lr4">
       <bpmn:text>assemble = TRUE</bpmn:text>
     </bpmn:textAnnotation>
@@ -106,10 +106,6 @@
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_1aj11w3_di" bpmnElement="TaskOfferAssembly">
         <dc:Bounds x="450" y="487" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_0l7a3ud_di" bpmnElement="TaskCalculateTotal">
-        <dc:Bounds x="860" y="487" width="100" height="80" />
-        <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_1685b9n_di" bpmnElement="TaskGetPaid">
         <dc:Bounds x="1210" y="487" width="100" height="80" />
@@ -152,6 +148,9 @@
         <bpmndi:BPMNLabel>
           <dc:Bounds x="1551" y="552" width="58" height="27" />
         </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0t2z8iy_di" bpmnElement="TaskCalculateTotal">
+        <dc:Bounds x="860" y="487" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_0c7gr1k_di" bpmnElement="Flow_0c7gr1k">
         <di:waypoint x="215" y="527" />

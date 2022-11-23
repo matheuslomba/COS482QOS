@@ -11,6 +11,10 @@
     {
       "fieldName": "clientName",
       "fieldType": "String"
+    },
+    {
+      "fieldName": "clientEmail",
+      "fieldType": "String"
     }
   ],
   "relationships": [],

@@ -13,6 +13,7 @@ const validations: any = {
       orderID: {},
       orderDate: {},
       clientName: {},
+      clientEmail: {},
     },
   },
 };

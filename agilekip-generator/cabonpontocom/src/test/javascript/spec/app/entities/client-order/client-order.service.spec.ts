@@ -33,7 +33,7 @@ describe('Service Tests', () => {
     beforeEach(() => {
       service = new ClientOrderService();
       currentDate = new Date();
-      elemDefault = new ClientOrder(0, 'AAAAAAA', currentDate, 'AAAAAAA', 0, 0, 'AAAAAAA', false, false, 'AAAAAAA', false);
+      elemDefault = new ClientOrder(0, 'AAAAAAA', currentDate, 'AAAAAAA', 'AAAAAAA', 0, 0, 'AAAAAAA', false, false, 'AAAAAAA', false);
     });
 
     describe('Service methods', () => {
@@ -67,6 +67,7 @@ describe('Service Tests', () => {
             orderID: 'BBBBBB',
             orderDate: dayjs(currentDate).format(DATE_FORMAT),
             clientName: 'BBBBBB',
+            clientEmail: 'BBBBBB',
             orderPrice: 1,
             numComponents: 1,
             payment: 'BBBBBB',

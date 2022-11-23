@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:lang="${#locale.language}" lang="en">
+  <head>
+    <title>Client Order refusal</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    <p>Dear <span th:text="${clientOrder.clientName}">clientName</span></p>
+    <p>
+      Your order could not be completed because the components are not compatible. Try again -
+      <b th:text="${clientOrder.orderID}">orderID</b>
+    </p>
+    <ul>
+      <li><b>Date</b>: <span th:text="${clientOrder.orderDate }"></span></li>
+      <li><b>Number of Items</b>: <span th:text="${clientOrder.numComponents }"></span></li>
+    </ul>
+    <p>
+      Regards,
+      <br />
+      <em>Cabunpontocom Team</em>
+    </p>
+  </body>
+</html>

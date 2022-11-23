@@ -42,6 +42,9 @@ class ClientOrderResourceIT {
     private static final String DEFAULT_CLIENT_NAME = "AAAAAAAAAA";
     private static final String UPDATED_CLIENT_NAME = "BBBBBBBBBB";
 
+    private static final String DEFAULT_CLIENT_EMAIL = "AAAAAAAAAA";
+    private static final String UPDATED_CLIENT_EMAIL = "BBBBBBBBBB";
+
     private static final Integer DEFAULT_ORDER_PRICE = 1;
     private static final Integer UPDATED_ORDER_PRICE = 2;
 
@@ -94,6 +97,7 @@ class ClientOrderResourceIT {
             .orderID(DEFAULT_ORDER_ID)
             .orderDate(DEFAULT_ORDER_DATE)
             .clientName(DEFAULT_CLIENT_NAME)
+            .clientEmail(DEFAULT_CLIENT_EMAIL)
             .orderPrice(DEFAULT_ORDER_PRICE)
             .numComponents(DEFAULT_NUM_COMPONENTS)
             .payment(DEFAULT_PAYMENT)
@@ -115,6 +119,7 @@ class ClientOrderResourceIT {
             .orderID(UPDATED_ORDER_ID)
             .orderDate(UPDATED_ORDER_DATE)
             .clientName(UPDATED_CLIENT_NAME)
+            .clientEmail(UPDATED_CLIENT_EMAIL)
             .orderPrice(UPDATED_ORDER_PRICE)
             .numComponents(UPDATED_NUM_COMPONENTS)
             .payment(UPDATED_PAYMENT)
@@ -145,6 +150,7 @@ class ClientOrderResourceIT {
             .andExpect(jsonPath("$.[*].orderID").value(hasItem(DEFAULT_ORDER_ID)))
             .andExpect(jsonPath("$.[*].orderDate").value(hasItem(DEFAULT_ORDER_DATE.toString())))
             .andExpect(jsonPath("$.[*].clientName").value(hasItem(DEFAULT_CLIENT_NAME)))
+            .andExpect(jsonPath("$.[*].clientEmail").value(hasItem(DEFAULT_CLIENT_EMAIL)))
             .andExpect(jsonPath("$.[*].orderPrice").value(hasItem(DEFAULT_ORDER_PRICE)))
             .andExpect(jsonPath("$.[*].numComponents").value(hasItem(DEFAULT_NUM_COMPONENTS)))
             .andExpect(jsonPath("$.[*].payment").value(hasItem(DEFAULT_PAYMENT)))
@@ -169,6 +175,7 @@ class ClientOrderResourceIT {
             .andExpect(jsonPath("$.orderID").value(DEFAULT_ORDER_ID))
             .andExpect(jsonPath("$.orderDate").value(DEFAULT_ORDER_DATE.toString()))
             .andExpect(jsonPath("$.clientName").value(DEFAULT_CLIENT_NAME))
+            .andExpect(jsonPath("$.clientEmail").value(DEFAULT_CLIENT_EMAIL))
             .andExpect(jsonPath("$.orderPrice").value(DEFAULT_ORDER_PRICE))
             .andExpect(jsonPath("$.numComponents").value(DEFAULT_NUM_COMPONENTS))
             .andExpect(jsonPath("$.payment").value(DEFAULT_PAYMENT))

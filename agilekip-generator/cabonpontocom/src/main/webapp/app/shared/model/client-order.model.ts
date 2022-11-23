@@ -3,6 +3,7 @@ export interface IClientOrder {
   orderID?: string | null;
   orderDate?: Date | null;
   clientName?: string | null;
+  clientEmail?: string | null;
   orderPrice?: number | null;
   numComponents?: number | null;
   payment?: string | null;
@@ -18,6 +19,7 @@ export class ClientOrder implements IClientOrder {
     public orderID?: string | null,
     public orderDate?: Date | null,
     public clientName?: string | null,
+    public clientEmail?: string | null,
     public orderPrice?: number | null,
     public numComponents?: number | null,
     public payment?: string | null,

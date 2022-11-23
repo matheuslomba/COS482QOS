@@ -21,6 +21,7 @@
       "orderID": "Order ID",
       "orderDate": "Order Date",
       "clientName": "Client Name",
+      "clientEmail": "Client Email",
       "orderPrice": "Order Price",
       "numComponents": "Num Components",
       "payment": "Payment",

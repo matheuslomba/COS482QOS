@@ -58,6 +58,20 @@
               </div>
               <div class="card-body py-0">
                 <div class="form-group">
+                  <label class="form-control-label" v-text="$t('cabonpontocomApp.clientOrderProcess.clientEmail')">clientEmail</label>
+                  <input
+                    readonly
+                    type="text"
+                    class="form-control"
+                    name="clientEmail"
+                    id="client-order-clientEmail"
+                    data-cy="clientEmail"
+                    v-model="clientOrderProcess.clientOrder.clientEmail"
+                  />
+                </div>
+              </div>
+              <div class="card-body py-0">
+                <div class="form-group">
                   <label class="form-control-label" v-text="$t('cabonpontocomApp.clientOrderProcess.orderPrice')">orderPrice</label>
                   <input
                     readonly

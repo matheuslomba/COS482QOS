@@ -13,6 +13,10 @@
       "fieldType": "String"
     },
     {
+      "fieldName": "clientEmail",
+      "fieldType": "String"
+    },
+    {
       "fieldName": "orderPrice",
       "fieldType": "Integer"
     },

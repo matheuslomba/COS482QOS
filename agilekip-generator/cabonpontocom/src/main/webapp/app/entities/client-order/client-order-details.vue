@@ -25,6 +25,12 @@
             <span>{{ clientOrder.clientName }}</span>
           </dd>
           <dt>
+            <span v-text="$t('cabonpontocomApp.clientOrder.clientEmail')">Client Email</span>
+          </dt>
+          <dd>
+            <span>{{ clientOrder.clientEmail }}</span>
+          </dd>
+          <dt>
             <span v-text="$t('cabonpontocomApp.clientOrder.orderPrice')">Order Price</span>
           </dt>
           <dd>

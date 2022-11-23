@@ -23,6 +23,9 @@
             <column name="client_name" type="varchar(255)">
                 <constraints nullable="true" />
             </column>
+            <column name="client_email" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
             <column name="order_price" type="integer">
                 <constraints nullable="true" />
             </column>

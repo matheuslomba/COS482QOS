@@ -30,6 +30,9 @@ public class ClientOrder implements Serializable {
     @Column(name = "client_name")
     private String clientName;
 
+    @Column(name = "client_email")
+    private String clientEmail;
+
     @Column(name = "order_price")
     private Integer orderPrice;
 
@@ -102,6 +105,19 @@ public class ClientOrder implements Serializable {
 
     public void setClientName(String clientName) {
         this.clientName = clientName;
+    }
+
+    public String getClientEmail() {
+        return this.clientEmail;
+    }
+
+    public ClientOrder clientEmail(String clientEmail) {
+        this.clientEmail = clientEmail;
+        return this;
+    }
+
+    public void setClientEmail(String clientEmail) {
+        this.clientEmail = clientEmail;
     }
 
     public Integer getOrderPrice() {
@@ -222,6 +238,7 @@ public class ClientOrder implements Serializable {
             ", orderID='" + getOrderID() + "'" +
             ", orderDate='" + getOrderDate() + "'" +
             ", clientName='" + getClientName() + "'" +
+            ", clientEmail='" + getClientEmail() + "'" +
             ", orderPrice=" + getOrderPrice() +
             ", numComponents=" + getNumComponents() +
             ", payment='" + getPayment() + "'" +

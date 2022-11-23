@@ -21,6 +21,7 @@
             <th scope="row"><span v-text="$t('cabonpontocomApp.clientOrder.orderID')">Order ID</span></th>
             <th scope="row"><span v-text="$t('cabonpontocomApp.clientOrder.orderDate')">Order Date</span></th>
             <th scope="row"><span v-text="$t('cabonpontocomApp.clientOrder.clientName')">Client Name</span></th>
+            <th scope="row"><span v-text="$t('cabonpontocomApp.clientOrder.clientEmail')">Client Email</span></th>
             <th scope="row"><span v-text="$t('cabonpontocomApp.clientOrder.orderPrice')">Order Price</span></th>
             <th scope="row"><span v-text="$t('cabonpontocomApp.clientOrder.numComponents')">Num Components</span></th>
             <th scope="row"><span v-text="$t('cabonpontocomApp.clientOrder.payment')">Payment</span></th>
@@ -39,6 +40,7 @@
             <td>{{ clientOrder.orderID }}</td>
             <td>{{ clientOrder.orderDate }}</td>
             <td>{{ clientOrder.clientName }}</td>
+            <td>{{ clientOrder.clientEmail }}</td>
             <td>{{ clientOrder.orderPrice }}</td>
             <td>{{ clientOrder.numComponents }}</td>
             <td>{{ clientOrder.payment }}</td>

@@ -20,7 +20,8 @@
       "id": "ID",
       "orderID": "Order ID",
       "orderDate": "Order Date",
-      "clientName": "Client Name"
+      "clientName": "Client Name",
+      "clientEmail": "Client Email"
     }
   }
 }
