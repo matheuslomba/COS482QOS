@@ -1,0 +1,44 @@
+{
+  "fields": [
+    {
+      "fieldName": "orderID",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orderDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "clientName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orderComponents",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orderPrice",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "numItems",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "assemblyPC",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [],
+  "entityType": "process-binding",
+  "processBpmnId": "ClientOrderProcess",
+  "domainEntityName": "ClientOrder",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "name": "ClientOrderProcess",
+  "changelogDate": "20210401000002",
+  "skipFakeData": true
+}

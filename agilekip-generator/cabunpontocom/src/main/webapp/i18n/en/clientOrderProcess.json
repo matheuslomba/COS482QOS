@@ -1,0 +1,30 @@
+{
+  "cabunpontocomApp": {
+    "clientOrderProcess": {
+      "home": {
+        "title": "Client Order Processes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Client Order Process",
+        "createOrEditLabel": "Create or edit a Client Order Process",
+        "notFound": "No Client Order Processes found"
+      },
+      "created": "A new Client Order Process is created with identifier {{ param }}",
+      "updated": "A Client Order Process is updated with identifier {{ param }}",
+      "deleted": "A Client Order Process is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Client Order Process {{ id }}?"
+      },
+      "detail": {
+        "title": "Client Order Process"
+      },
+      "id": "ID",
+      "orderID": "Order ID",
+      "orderDate": "Order Date",
+      "clientName": "Client Name",
+      "orderComponents": "Order Components",
+      "orderPrice": "Order Price",
+      "numItems": "Num Items",
+      "assemblyPC": "Assembly PC"
+    }
+  }
+}

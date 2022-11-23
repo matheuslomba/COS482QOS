@@ -1,0 +1,22 @@
+{
+  "cabunpontocomApp": {
+    "clientOrder": {
+      "home": {
+        "title": "Client Orders",
+        "refreshListLabel": "Refresh list",
+        "notFound": "No Client Orders found"
+      },
+      "detail": {
+        "title": "Client Order"
+      },
+      "id": "ID",
+      "orderID": "Order ID",
+      "orderDate": "Order Date",
+      "clientName": "Client Name",
+      "orderComponents": "Order Components",
+      "orderPrice": "Order Price",
+      "numItems": "Num Items",
+      "assemblyPC": "Assembly PC"
+    }
+  }
+}
