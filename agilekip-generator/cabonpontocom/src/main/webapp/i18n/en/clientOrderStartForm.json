@@ -1,0 +1,26 @@
+{
+  "cabonpontocomApp": {
+    "clientOrderStartForm": {
+      "home": {
+        "title": "Client Order Start Forms",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Client Order Start Form",
+        "createOrEditLabel": "Create or edit a Client Order Start Form",
+        "notFound": "No Client Order Start Forms found"
+      },
+      "created": "A new Client Order Start Form is created with identifier {{ param }}",
+      "updated": "A Client Order Start Form is updated with identifier {{ param }}",
+      "deleted": "A Client Order Start Form is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Client Order Start Form {{ id }}?"
+      },
+      "detail": {
+        "title": "Client Order Start Form"
+      },
+      "id": "ID",
+      "orderID": "Order ID",
+      "orderDate": "Order Date",
+      "clientName": "Client Name"
+    }
+  }
+}

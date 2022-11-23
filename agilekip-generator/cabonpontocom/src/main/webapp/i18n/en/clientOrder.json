@@ -1,0 +1,25 @@
+{
+  "cabonpontocomApp": {
+    "clientOrder": {
+      "home": {
+        "title": "Client Orders",
+        "refreshListLabel": "Refresh list",
+        "notFound": "No Client Orders found"
+      },
+      "detail": {
+        "title": "Client Order"
+      },
+      "id": "ID",
+      "orderID": "Order ID",
+      "orderDate": "Order Date",
+      "clientName": "Client Name",
+      "orderPrice": "Order Price",
+      "numComponents": "Num Components",
+      "payment": "Payment",
+      "proceedToCheckout": "Proceed To Checkout",
+      "assemblyPC": "Assembly PC",
+      "deliveryAdd": "Delivery Add",
+      "isCompatible": "Is Compatible"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "cabonpontocomApp": {
+    "taskGetPaid": {
+      "home": {
+        "title": "Task Get Paids",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Task Get Paid",
+        "createOrEditLabel": "Create or edit a Task Get Paid",
+        "notFound": "No Task Get Paids found"
+      },
+      "created": "A new Task Get Paid is created with identifier {{ param }}",
+      "updated": "A Task Get Paid is updated with identifier {{ param }}",
+      "deleted": "A Task Get Paid is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Task Get Paid {{ id }}?"
+      },
+      "detail": {
+        "title": "Task Get Paid"
+      },
+      "id": "ID",
+      "orderID": "Order ID",
+      "orderDate": "Order Date",
+      "clientName": "Client Name",
+      "deliveryAdd": "Delivery Add",
+      "orderPrice": "Order Price",
+      "payment": "Payment"
+    }
+  }
+}

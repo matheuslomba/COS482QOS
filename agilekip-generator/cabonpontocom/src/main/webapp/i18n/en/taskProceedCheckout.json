@@ -1,0 +1,29 @@
+{
+  "cabonpontocomApp": {
+    "taskProceedCheckout": {
+      "home": {
+        "title": "Task Proceed Checkouts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Task Proceed Checkout",
+        "createOrEditLabel": "Create or edit a Task Proceed Checkout",
+        "notFound": "No Task Proceed Checkouts found"
+      },
+      "created": "A new Task Proceed Checkout is created with identifier {{ param }}",
+      "updated": "A Task Proceed Checkout is updated with identifier {{ param }}",
+      "deleted": "A Task Proceed Checkout is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Task Proceed Checkout {{ id }}?"
+      },
+      "detail": {
+        "title": "Task Proceed Checkout"
+      },
+      "id": "ID",
+      "orderID": "Order ID",
+      "orderDate": "Order Date",
+      "clientName": "Client Name",
+      "numComponents": "Num Components",
+      "deliveryAdd": "Delivery Add",
+      "proceedToCheckout": "Proceed To Checkout"
+    }
+  }
+}

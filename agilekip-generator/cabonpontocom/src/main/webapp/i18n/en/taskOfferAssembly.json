@@ -1,0 +1,28 @@
+{
+  "cabonpontocomApp": {
+    "taskOfferAssembly": {
+      "home": {
+        "title": "Task Offer Assemblies",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Task Offer Assembly",
+        "createOrEditLabel": "Create or edit a Task Offer Assembly",
+        "notFound": "No Task Offer Assemblies found"
+      },
+      "created": "A new Task Offer Assembly is created with identifier {{ param }}",
+      "updated": "A Task Offer Assembly is updated with identifier {{ param }}",
+      "deleted": "A Task Offer Assembly is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Task Offer Assembly {{ id }}?"
+      },
+      "detail": {
+        "title": "Task Offer Assembly"
+      },
+      "id": "ID",
+      "orderID": "Order ID",
+      "orderDate": "Order Date",
+      "clientName": "Client Name",
+      "numComponents": "Num Components",
+      "assemblyPC": "Assembly PC"
+    }
+  }
+}

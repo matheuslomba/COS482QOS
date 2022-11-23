@@ -1,0 +1,47 @@
+{
+  "fields": [
+    {
+      "fieldName": "orderID",
+      "fieldType": "String",
+      "fieldReadOnly": true
+    },
+    {
+      "fieldName": "orderDate",
+      "fieldType": "LocalDate",
+      "fieldReadOnly": true
+    },
+    {
+      "fieldName": "clientName",
+      "fieldType": "String",
+      "fieldReadOnly": true
+    },
+    {
+      "fieldName": "numComponents",
+      "fieldType": "Integer",
+      "fieldReadOnly": true
+    },
+    {
+      "fieldName": "deliveryAdd",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "proceedToCheckout",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [],
+  "entityType": "user-task-form",
+  "processBpmnId": "ClientOrderProcess",
+  "processEntityName": "ClientOrderProcess",
+  "taskBpmnId": "TaskProceedCheckout",
+  "domainEntityName": "ClientOrder",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "skipFakeData": true,
+  "name": "TaskProceedCheckout",
+  "changelogDate": "20210401000004"
+}
